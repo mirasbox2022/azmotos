@@ -59,7 +59,7 @@ const Login: React.FC = () => {
           </div>
         </div>
         
-        <h2 className="text-2xl font-bold text-white text-center mb-6">Вход в МотоРоссию</h2>
+        <h2 className="text-2xl font-bold text-white text-center mb-6">Вход в AZMOTOS</h2>
         
         {error && (
           <div className="bg-red-900/40 border border-red-500 rounded-md p-3 mb-4 flex items-start">
