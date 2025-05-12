@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #e50914;
+  --primary-dark: #b20710;
+  --secondary: #1c1c1c;
+  --text: #ffffff;
+  --background: #0c0c0c;
+  --gray-light: #333333;
+  --gray: #222222;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-red-600 hover:bg-red-700 text-white font-medium py-2 px-6 rounded-md transition-all;
+  }
+
+  .btn-secondary {
+    @apply bg-zinc-800 hover:bg-zinc-700 text-white font-medium py-2 px-6 rounded-md transition-all;
+  }
+  
+  .input-field {
+    @apply bg-zinc-800 text-white border border-zinc-700 rounded-md p-3 w-full focus:outline-none focus:ring-2 focus:ring-red-500;
+  }
+  
+  .card {
+    @apply bg-zinc-900 rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300;
+  }
+}
